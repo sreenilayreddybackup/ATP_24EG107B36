@@ -1,0 +1,80 @@
+### read all users
+GET http://localhost:2903/user
+
+
+
+### read specific user
+GET http://localhost:2903/user/62
+
+###create new user,after post ,there should be no space between post and content-type
+POST http://localhost:2903/user
+Content-Type: application/json 
+
+{
+    "id":36,
+    "name":"nilay",
+    "age":19
+}
+
+
+###update a user
+PUT http://localhost:2903/user
+Content-Type: application/json 
+
+{
+    "id":36,
+    "name":"sree nilay",
+    "age":19
+}
+
+
+### delete a user
+DELETE http://localhost:2903/user/36
+
+
+### get and post shouldd send body to the backend , geut and delete doen't support body of req object , so that the two req can send data through end point  -->
+
+
+
+
+
+### read all users
+GET http://localhost:2903/pdt
+
+###
+POST http://localhost:2903/pdt
+Content-Type: application/json 
+
+{
+    "pdtid":27,
+    "name":"smartphone",
+    "brand":"vivo",
+    "price":310000
+}
+
+
+###update a product
+PUT http://localhost:2903/pdt
+Content-Type: application/json 
+
+{
+    "pdtid":27,
+    "name":"smartphone",
+    "brand":"redmi",
+    "price":310000
+}
+
+
+### delete a pdt
+DELETE http://localhost:2903/pdt/27
+
+
+
+### get by brand
+GET http://localhost:2903/pdt/redmi
+
+
+
+
+
+
