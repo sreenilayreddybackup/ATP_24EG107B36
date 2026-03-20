@@ -1,0 +1,49 @@
+### Register User
+POST http://localhost:4000/auth/users
+Content-Type: application/json
+
+{
+  "firstName": "user1",
+  "lastName": "",
+  "email": "user1@mail.com",
+  "role":"USER",
+  "password": "user1",
+  "profileImageUrl": "https://example.com/avatars/user.png"
+}
+
+### User Login
+POST http://localhost:4000/auth/login
+Content-Type: application/json
+
+{
+  "email":"user1@mail.com",
+  "password":"user1"
+}
+
+### User logout
+GET http://localhost:4000/auth/logout
+
+
+###read all the articles
+GET http://localhost:4000/user-api/user
+
+###add comment by a user to an article
+PUT http://localhost:4000/user-api/article
+Content-Type: application/json
+
+{
+  "articleId":"69b4d6b5a5335d288c455c1b",
+  "comment":"wowwwwwwww,noiceeeeeeeee"
+}
+
+
+
+
+### change password
+put http://localhost:4000/auth/password
+Content-Type: application/json
+
+{
+  "current_password":"user1",
+  "new_password":"nilay"
+}
