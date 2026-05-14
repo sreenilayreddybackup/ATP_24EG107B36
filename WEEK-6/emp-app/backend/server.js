@@ -1,30 +1,38 @@
 import exp from "express";
-import { connect } from "mongoose";
+import mongoose from "mongoose";
 import { empRoute } from "./API/empApp.js";
 import cors from "cors";
 
 const app = exp();
-//add cors middleware
-app.use(
-  cors({
-    origin: ["http://localhost:5173"],
-  }),
-);
-//body parser middleware
+
+// CORS middleware
+app.use(cors());
+
+// body parser middleware
 app.use(exp.json());
-//emp api middleware
+
+// emp api middleware
 app.use("/emp-api", empRoute);
 
-//DB connection
+// default route
+app.get("/", (req, res) => {
+  res.send("Backend Running");
+});
+
+// DB connection
 const connectDB = async () => {
   try {
-    await connect("mongodb+srv://sreenilayreddybackup_db:nilay5253@cluster0.sgp3nib.mongodb.net/?appName=Cluster0");
+    await mongoose.connect(
+      "mongodb+srv://sreenilayreddybackup_db:nilay5253@cluster0.sgp3nib.mongodb.net/empdb?retryWrites=true&w=majority&appName=Cluster0"
+    );
+
     console.log("DB connected");
+
     const PORT = process.env.PORT || 4000;
 
     app.listen(PORT, () =>
-  console.log(`server listening on port ${PORT}..`)
-);
+      console.log(`server listening on port ${PORT}..`)
+    );
   } catch (err) {
     console.log("err in DB connection", err.message);
   }
@@ -32,7 +40,7 @@ const connectDB = async () => {
 
 connectDB();
 
-//error handling middleware
+// error handling middleware
 app.use((err, req, res, next) => {
   console.log("err in middleware:", err.message);
 
