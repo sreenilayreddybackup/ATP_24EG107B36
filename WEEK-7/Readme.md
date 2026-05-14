@@ -3,9 +3,11 @@
 ## Topics Covered
 - React Frontend Development
 - Blog Frontend Application
-- Components and Routing
-- UI Design
-- Frontend Architecture
+- Backend API Development
+- Authentication and Authorization
+- JWT Token Verification
+- MongoDB Models
+- MERN Stack Integration
 
 ---
 
@@ -13,21 +15,32 @@
 
 | File Name | Description |
 |------------|-------------|
-| `blog-frontend/src/App.jsx` | Main React application |
-| `blog-frontend/src/components/Articles.jsx` | Articles component |
-| `blog-frontend/src/components/ArticleByID.jsx` | Single article display component |
-| `blog-frontend/src/components/AdminProfile.jsx` | Admin profile component |
-| `blog-frontend/package.json` | Frontend dependencies |
+| `src/App.jsx` | Main React application |
+| `src/components/Articles.jsx` | Articles component |
+| `src/components/ArticleByID.jsx` | Single article display component |
+| `src/components/AdminProfile.jsx` | Admin profile component |
+| `server.js` | Main backend server setup |
+| `AdminAPI.js` | Admin API routes and logic |
+| `AuthorAPI.js` | Author API routes and operations |
+| `CommanAPI.js` | Common/shared API functionality |
+| `UserAPI.js` | User API routes and authentication |
+| `verifyToken.js` | JWT token verification middleware |
+| `ArticleModel.js` | MongoDB schema for articles |
+| `UserModel.js` | MongoDB schema for users |
+| `package.json` | Project dependencies and scripts |
+| `user-req.http` | API request testing file |
 
 ---
 
 ## Skills Practiced
-- React Components
-- Frontend Development
-- Routing Concepts
-- UI Design
-- Component Architecture
-- Responsive Design
+- React Development
+- Backend API Development
+- JWT Authentication
+- MERN Stack Integration
+- MongoDB Database Modeling
+- REST API Development
+- Middleware Usage
+- Frontend and Backend Integration
 
 ---
 
@@ -35,6 +48,8 @@
 **24EG107B36**
 
 GitHub: https://github.com/sreenilayreddybackup
+
+Repository: https://github.com/sreenilayreddybackup/ATP_24EG107B36
 
 ---
 
