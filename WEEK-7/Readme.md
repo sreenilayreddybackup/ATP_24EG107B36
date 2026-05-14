@@ -53,7 +53,9 @@ Repository: https://github.com/sreenilayreddybackup/ATP_24EG107B36
 
 ---
 
-# Author
+# Deployment links
 
 24EG107B36  
-GitHub: https://github.com/sreenilayreddybackup
+frontend: https://blogapp-smoky-five.vercel.app/
+
+backend: https://blogapp-12zw.onrender.com/
