@@ -38,7 +38,9 @@ GitHub: https://github.com/sreenilayreddybackup
 
 ---
 
-# Author
+# Deployment links
 
 24EG107B36  
-GitHub: https://github.com/sreenilayreddybackup
+frontend: https://employee-project-nu.vercel.app/
+
+backend: https://employee-project-vdh2.onrender.com
