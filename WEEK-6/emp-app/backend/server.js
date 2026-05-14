@@ -18,7 +18,7 @@ app.use("/emp-api", empRoute);
 //DB connection
 const connectDB = async () => {
   try {
-    await connect("mongodb://localhost:27017/empdb");
+    await connect("mongodb://sreenilayreddybackup_db:nilay5253@ac-rm0ymww-shard-00-00.sgp3nib.mongodb.net:27017,ac-rm0ymww-shard-00-01.sgp3nib.mongodb.net:27017,ac-rm0ymww-shard-00-02.sgp3nib.mongodb.net:27017/?ssl=true&replicaSet=atlas-o9tfev-shard-0&authSource=admin&appName=Cluster0");
     console.log("DB connected");
     app.listen(4000, () => console.log("server listening on port 4000.."));
   } catch (err) {
